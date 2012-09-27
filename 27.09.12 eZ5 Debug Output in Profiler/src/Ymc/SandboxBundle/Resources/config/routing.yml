@@ -1,0 +1,6 @@
+sandbox:
+    pattern: /sandbox/{contentId}
+    defaults:
+        _controller: ymcSandboxBundle:Sandbox:sandbox
+    requirements:
+        contentId: \d+

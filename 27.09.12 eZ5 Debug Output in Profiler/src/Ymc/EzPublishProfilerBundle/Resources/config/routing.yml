@@ -1,0 +1,7 @@
+profilerDebug:
+    pattern: /profilerDebug/{contentId}
+    defaults:
+        _controller: YmcEzPublishProfilerBundle:EzPublishDebug:debug
+    requirements:
+        contentId: \d+
+

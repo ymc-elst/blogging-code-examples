@@ -1,0 +1,11 @@
+services:
+    data_collector.EzPublishdata:
+        class: Ymc\EzPublishProfilerBundle\DataCollector\EzPublishDataCollector
+        public: false
+        arguments: [@service_container][@twig]
+        tags:
+            - { name: data_collector, template: "YmcEzPublishProfilerBundle:Collector:ezpublishdata", id: "ezpublishdata" }
+    YmcEzPublishProfilerBundle:
+        class: Ymc\EzPublishProfilerBundle\Controller\EzPublishDebugController
+        tags:
+             - { name: debug_controller, template: "YmcEzPublishProfilerBundle:Controller:ezpublishdebug", id: "ezpublishdebug" }

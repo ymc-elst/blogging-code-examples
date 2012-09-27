@@ -1,0 +1,18 @@
+eZDemoBundle:
+    resource: "@eZDemoBundle/Resources/config/routing.yml"
+
+_ezpublishRoutes:
+    resource: "@EzPublishCoreBundle/Resources/config/routing/internal.yml"
+
+_ezpublishLegacyRoutes:
+    resource: "@EzPublishLegacyBundle/Resources/config/routing.yml"
+
+_internal:
+    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+    prefix:   /_internal
+
+ymcSandbox:
+    resource: "@ymcSandboxBundle/Resources/config/routing.yml"
+
+ymcPublishProfiler:
+    resource: "@YmcEzPublishProfilerBundle/Resources/config/routing.yml"

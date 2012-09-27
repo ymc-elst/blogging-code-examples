@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    {% block head %}
+    <meta charset="utf-8"/>
+    <title>eZPublish5 Sandbox</title>
+    <link rel="stylesheet" type="text/css" href="{{ asset( "bundles/ymcsandbox/css/coolblue.css" ) }}"/>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    {% if app.environment == 'dev' %}
+        <script src="{{ asset( "../src/Ymc/EzPublishProfilerBundle/Resources/public/js/profilertoolbar.js" ) }}"></script>
+    {% endif %}
+
+    {% endblock %}
+</head>
+
+<body id="top">
+
+<div id="header-wrap">
+    <header>
+        <hgroup class="post">
+            <h1>YMC eZPublish5 Sandbox</h1>
+            <h3 class="post-info"><a href="#">getting things started with eZ & Symfony2</a></h3>
+        </hgroup>
+
+        <nav>
+            &nbsp;
+        </nav>
+    </header>
+</div>
+
+<div id="content-wrap">
+    <div id="content" class="clearfix">
+
+        <div id="main">
+            <div class="main-content">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+
+		<div id="sidebar">
+      	 i am the sidebar :-/
+		</div>
+	</div>
+</div>
+
+<footer>
+	<p class="footer-left">
+    YMC ist die Schweizer Agentur für Social Media und Social E-Commerce. Besonderer Fokus liegt auf eZ Publish sowie auf der strategischen Beratung und Konzeption von Online-Vorhaben. Mit eZ Publish realisiert YMC Newsportale, Social Media, Enterprise CMS, Intranet und Shoplösungen, bietet ausserdem hochverfügbaren Serverbetrieb und ein spezialisiertes eZ Publish Hosting an.
+	</p>
+	<p class="footer-right">
+        Kontakt | Anfahrt | Sitemap | Impressum | Blog<br>
+        © 2012 YMC AG.
+    </p>
+</footer>
+
+</body>
+</html>
